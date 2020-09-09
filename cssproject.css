@@ -7,11 +7,12 @@
 }
 
 .head{
-    position:fixed;
-    background-color: yellow;
+    position: sticky;
 }
 
 h1{
+     position: sticky;
+     background-color: yellow;
      font-size: 50px;
      line-height:60px;
 }
