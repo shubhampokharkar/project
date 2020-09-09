@@ -1,0 +1,282 @@
+
+*{
+     margin: 0;
+     padding: 0;
+     list-style:none;
+     text-decoration:none;
+}
+
+.head{
+    position:fixed;
+    background-color: yellow;
+}
+
+h1{
+     font-size: 50px;
+     line-height:60px;
+}
+.sidebar{
+     position: fixed;
+     left: -25%;
+     width: 25%;
+     height: 100%;
+     background-color: #042331;
+}
+
+.sidebar header{
+     font-size:22px;
+     color: red;
+     text-align: center;
+     line-height:70px;
+     user-select: none;
+     background-color: #063146;
+}
+
+.sidebar ul li{
+     box-sizing:border-box;
+     border-top: 1px solid rgba(255,255,255,0.1);
+     border-bottom: 1px solid black;
+     
+}
+
+.sidebar ul a{
+     display: block;
+     height: 100%;
+     width: 100%;
+     line-height:65px;
+     font-size: 20px;
+     padding-left:40px;
+     color: white;
+     border-left: 3px solid transparent;
+}
+
+
+ul li.active a{
+     color: cyan;
+     border-left-color: cyan;
+}
+
+.sidebar ul a i{
+     margin-right:16px;
+}
+
+.sidebar ul ul{
+    position:static;
+    display: none;
+}
+
+.sidebar ul .Odbtn.show{
+    display: block;
+}
+
+.sidebar ul ul li{
+    border-bottom:none;
+    line-height:42px;
+}
+
+.sidebar ul ul li a{
+    font-size:18px;
+    padding-left:80px;
+}
+
+ul li.active ul li a{
+     color: #e6e6e6;
+     background: #1b1b1b;
+     border-left-color: transparent;
+}
+
+ul ul li a:hover{
+     color: cyan!important;
+     background: ##1b1b1b;
+}
+
+#span{
+    margin-left:60px;
+}
+
+.sidebar ul li a span.rotate{
+    transform: rotate(-180deg);
+}
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    curser: pointer;
+    background: #042331;
+    border-radius:3px;
+}
+
+label #btn{
+    left: 180px;
+    top:8px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+}
+
+label #cancel{
+    z-index:1111;
+    left: -180px;
+    top: 8px;
+    font-size:35px;
+    color: white;
+    padding: 4px 9px;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ .label #btn{
+    left: 25%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 180px;
+}
+
+#check:checked ~ section{
+    margin-left: 25%;
+}
+ section{
+    margin: 10px;
+ }
+
+#search header{
+    margin-top:30px;
+    line-height: 40px;;
+    background-color: orange;
+    border-radius:5px;
+}
+
+#search header h2{
+    margin-left:15px;;
+}
+
+.search{
+    margin-top:20px;
+}
+
+.search input{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#sear{
+    height: 30px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+}
+
+#canc{
+    height: 30px;
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+#Activation header, #Modify header{
+    margin-top:30px;
+    line-height: 40px;;
+    background-color: orange;
+    border-radius:5px;
+}
+
+#Activation header h2, #Modify header h2{
+    margin-left:15px;;
+}
+
+.Activation, .Modify{
+    margin-top:20px;
+}
+
+.Activation input, .Modify input{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#activate , #mod{
+    height: 30px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+}
+
+input {
+    text-align: center;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  :-moz-placeholder {
+    text-align: center;
+  }
+
+#details header{
+    margin-top:30px;
+    line-height: 40px;;
+    background-color: orange;
+    border-radius:5px;
+}
+
+#details header h2{
+    margin-left:15px;;
+}
+
+#Modif{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#Modif h3{
+    margin-top:30px;
+    line-height: 40px;;
+    background-color: violet;
+    border-radius:5px;
+    border: 1px solid black;
+}
+#detl{
+	background: #F8F8F8;
+	border: 1px solid black;
+}
+#form{
+    margin-left: 10px;
+}
+
+#form label{
+    margin-left: 20px;
+}
+
+#form input{
+    height: 30px;
+}
+
+#form input[type=email],
+#form input[type=textarea]{
+    width: 300px;
+}
+
+#form select{
+    height: 30px;
+    width: 200px;
+}
+
+#form button{
+    width: 150px;
+    height: 30px;
+}
+
+#change{
+    background-color: blue;
+}
+#clear{
+    background-color: red;
+}
